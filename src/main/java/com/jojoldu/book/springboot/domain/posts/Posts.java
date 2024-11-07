@@ -1,5 +1,6 @@
 package com.jojoldu.book.springboot.domain.posts;
 
+import com.jojoldu.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts { // 기본적으로 클래스의 카멜케이스네이밍이 DB에는 언더스코에 네이밍으로 매칭된다.
+public class Posts extends BaseTimeEntity { // 기본적으로 클래스의 카멜케이스네이밍이 DB에는 언더스코에 네이밍으로 매칭된다.
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
