@@ -30,4 +30,9 @@ public class Posts { // 기본적으로 클래스의 카멜케이스네이밍이
         this.id = id;
         this.title = title;
     }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
 }
