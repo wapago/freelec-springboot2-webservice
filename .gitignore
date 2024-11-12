@@ -1,4 +1,4 @@
 .gradle
 .idea
-.class
+*.class
 application-oauth.properties
