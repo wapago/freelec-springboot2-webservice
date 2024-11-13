@@ -1,4 +1,8 @@
 .gradle
 .idea
 *.class
+.html
+.bin
+.idx
+.xml
 application-oauth.properties
